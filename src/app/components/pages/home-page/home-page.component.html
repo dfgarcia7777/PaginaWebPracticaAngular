@@ -1,1 +1,52 @@
-<p>home-page works!</p>
+ <div class="container-lg" ><!--fluid->para que ocupen todo el ancho disponible--> 
+      
+      
+      <!-- Body -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="../../../../assets/images/Recurso 2100.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="card-title">SALUD Y BIENESTAR</h5>
+                <p>Garantiza una vida sana</p>
+                <a href="#" class="btn btn-secondary">Pedir Cita</a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000" >
+              <img id="promocion" src="../../../../assets/images/Recurso 4100.jpg" class="d-block w-100" alt="...">
+              
+              <div  class="carousel-caption d-none d-md-block" >
+                <h5 class="promocion">PROMOCION</h5>
+                 <p id="temporizador">  </p>
+                <p class="promocion-subtitulo">Un 30% de descuento en nuestra tienda</p>
+                <button (click)="irATienda()" class="btn btn-danger">Tienda</button>
+                <div style="text-align: center; margin: 0 auto;">
+                 
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000" >
+              <img src="../../../../assets/images/Recurso 2100.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Destacado</h5>
+                <p>Informate En nuestros Blog</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      <!-- Body -->
+    
+    </div>

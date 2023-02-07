@@ -1,0 +1,11 @@
+.nav-link:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#temporizador {
+    font-size: x-large;
+    font-weight: 33px;
+}
+img{
+    width: 50%;
+}

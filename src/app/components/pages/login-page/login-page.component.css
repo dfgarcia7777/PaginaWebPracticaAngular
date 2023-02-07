@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: none;
+    list-style: none;
+    font-style: none;
+    box-sizing: border-box;
+    /*Para que no se salga de nuestro contenedor*/
+}
+
+body {
+
+    background-image: #fff;
+    /*Para que el footer este siempre abajo*/
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+img {
+    width: 10%;
+    padding: 2px;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
+}
+.title {
+    font-size: 30px;
+}
+.violeta{
+    color: #9B32B2;
+}

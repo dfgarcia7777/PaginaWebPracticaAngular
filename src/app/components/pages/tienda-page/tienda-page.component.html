@@ -1,0 +1,39 @@
+
+<!-- Card -->
+<div class="container row m-5 d-flex justify-content-center flex-wrap">
+    <!-- Quiero mostrar tantos cards como elementos tiene la lista -->
+    <div *ngFor="let producto of listaProductos; let i= index" class="col-sm-3 ">
+        <div class="card shadow">
+          <img src="{{producto.img}}" class="card-img-top" alt="{{producto.img}}">
+            <div class="card-body">
+              <h5 id="producto" class="card-title">{{producto.nombre}}</h5>
+                <p class="card-text"><strong> {{producto.precio}}euros</strong> </p>
+                <!-- Agregar o Quitar un producto -->
+                <div class="input-group">
+                        <button (click)="disminuir(producto.id)" aria-label="Disminuir cantidad" class="btn btn-dark btn-number" data-field="quantity" data-type="minus" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                            </svg>
+                        </button>
+                    
+                        <input  class="form-control input-number"   max="100" min="1" name="quantity" required="" step="1" value="{{total}}">
+                        
+                        <button (click)="aumentar(producto.id)"aria-label="Aumentar cantidad" class="btn btn-dark btn-number" data-field="quantity" data-type="plus" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                    </button>
+    
+                </div>
+                <div>
+                    <button class="btn btn-primary add-link" data-product="p001">Añadir al carrito 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                    </svg>
+                    </button>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
